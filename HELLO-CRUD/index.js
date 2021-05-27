@@ -10,6 +10,8 @@ const usuarioWerter = {
     idade: 29
 };
 
+let time
+
 const usuarios = [usuarioWerter]
 
 app.get('/usuarios', (req, res) => {
