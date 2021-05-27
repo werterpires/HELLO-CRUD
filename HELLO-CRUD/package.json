@@ -1,0 +1,19 @@
+{
+  "name": "hello-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werterpires/HELLO-CRUD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/werterpires/HELLO-CRUD/issues"
+  },
+  "homepage": "https://github.com/werterpires/HELLO-CRUD#readme"
+}
