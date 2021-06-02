@@ -2,7 +2,7 @@ const express = require("express");
 const app = express()  ;
 app.use(express.json());
 
-const port = 40000;
+const port = 4000;
 
 const usuarioWerter = {
     id: 1,
@@ -20,7 +20,7 @@ app.get('/usuarios', (req, res) => {
 
 app.post('/usuarios', (req, res) =>{
     const {nome, idade} = req.body;
-    const id = usuarios.length;
+    const id = usuarios.length + 1;
 
     const novoUsuario = {
         id,
@@ -44,6 +44,10 @@ app.put('/usuarios/:id', (req, res) => {
     res.json(usuario)
 })
 
+let conta = 3.6 * 1.8 - 3.6
+console.log(conta)
+
+
 
 app.delete('/usuarios/:id', (req, res) => {
     const { id } = req.params;
@@ -54,9 +58,8 @@ app.delete('/usuarios/:id', (req, res) => {
     res.status(204).send();
     });
 
-
-
+    
 app.listen(port, () => {
 console.log(`Server is up and runnig on port ${port}`)
-});
+})
 
